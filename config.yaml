@@ -5,7 +5,7 @@ author: Andy Wickert
 
 data:
     # Filename expected with columns "Q", "Stage"
-    filename: 'CannonWelch_Since_2002__feet.tsv'
+    filename: 'CannonWelch05355200_RatingCurve_2002-2012.tsv'
     # tab, space, or comma
     delimiter: 'tab'
     # If data set uses US cfs (Q) and feet (Stage), converts these to metric.
@@ -13,11 +13,12 @@ data:
 
 channel:
     # meters; if ommitted, will be solved for as a free variable
-    #width: 50
+    width: 45
     # meters; if omitted, will be solved for as a free variable
-    # depth: 3
+    # Here, set to be just above the surveyed floodplain-channel-like form
+    # depth: 0.7
     # unitless
-    slope: 1E-3
+    slope: 9E-4
     # Use depth instead of hydraulic radius for calculations. True/False.
     use_depth: False
 
@@ -25,27 +26,27 @@ bounds:
     # Uncomment the following to set them different from the defaults
     # They should be given in LOWER, UPPER
     mannings_n_bounds:
-        - 0.025
-        - 0.045
+        - 0.020
+        - 0.055
     # floodplain_coeff_bounds:
     #    - LOWER
     #    - UPPER
-    # floodplain_exponent_bounds:
-    #    - LOWER
-    #    - UPPER
-    stage_offset_bounds:
-        - -10
-        - 10
-    channel_depth_bounds:
-        - 1
+    floodplain_exponent_bounds:
+        - 1.6666666666666666666667
         - 5
-    channel_width_bounds:
-        - 35
-        - 60
+    stage_offset_bounds:
+        - -2
+        - 2
+    channel_depth_bounds:
+        - 2
+        - 3
+    #channel_width_bounds:
+    #    - 40
+    #    - 50
 
 output:
     # CSV output file name
-    outfile: 'Manning2.csv'
+    outfile: 'doublemanning_params_CannonWelch.csv'
     # True/False Boolean flags
     plot: True
     verbose: True
