@@ -1,0 +1,52 @@
+river: Cannon
+station: Welch
+
+author: Andy Wickert
+
+data:
+    # Filename expected with columns "Q", "Stage"
+    filename: 'CannonWelch_Since_2002__feet.tsv'
+    # tab, space, or comma
+    delimiter: 'tab'
+    # If data set uses US cfs (Q) and feet (Stage), converts these to metric.
+    us-units: True
+
+channel:
+    # meters; if ommitted, will be solved for as a free variable
+    #width: 50
+    # meters; if omitted, will be solved for as a free variable
+    # depth: 3
+    # unitless
+    slope: 1E-3
+    # Use depth instead of hydraulic radius for calculations. True/False.
+    use_depth: False
+
+bounds:
+    # Uncomment the following to set them different from the defaults
+    # They should be given in LOWER, UPPER
+    mannings_n_bounds:
+        - 0.025
+        - 0.045
+    # floodplain_coeff_bounds:
+    #    - LOWER
+    #    - UPPER
+    # floodplain_exponent_bounds:
+    #    - LOWER
+    #    - UPPER
+    stage_offset_bounds:
+        - -10
+        - 10
+    channel_depth_bounds:
+        - 1
+        - 5
+    channel_width_bounds:
+        - 35
+        - 60
+
+output:
+    # CSV output file name
+    outfile: 'Manning2.csv'
+    # True/False Boolean flags
+    plot: True
+    verbose: True
+
