@@ -44,10 +44,26 @@ bounds:
     #    - 40
     #    - 50
 
+
+plotting:
+    # If this is present, the plot will be saved.
+    # Format set by file extension.
+    # Path may be relative or absolute
+    savepath: 'CannonRiver_Welch.pdf'
+    # True/False Boolean flag
+    show: True
+    # Optional fixed plotting bounds
+    stage_min: -0.001
+    stage_max: 4.7
+    #discharge_min: 
+    discharge_max: 600
+    # Plot curve even if discharge is negative (nonphysical)
+    display_negative_rating_curve: False
+
+
 output:
     # CSV output file name
     outfile: 'doublemanning_params_CannonWelch.csv'
-    # True/False Boolean flags
-    plot: True
+    # True/False Boolean flag
     verbose: True
 
