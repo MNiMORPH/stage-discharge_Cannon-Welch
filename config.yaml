@@ -38,8 +38,12 @@ bounds:
         - -2
         - 2
     channel_depth_bounds:
-        - 2
-        - 3
+        # Lidar data (banks, water surface) with info from stage offset
+        # now, water surface when the lidar was acquired, and absolute
+        # gauge elevation, tells us that the banks are 2.17 +/- 0.33 m (or so)
+        # in total height from bed to floodplain
+        - 1.84
+        - 2.49
     #channel_width_bounds:
     #    - 40
     #    - 50
