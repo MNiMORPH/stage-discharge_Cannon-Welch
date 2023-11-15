@@ -63,6 +63,14 @@ plotting:
     discharge_max: 600
     # Plot curve even if discharge is negative (nonphysical)
     display_negative_rating_curve: False
+    # Markers and lines for stage offsets and bank heights
+    stage_offset_hash_bottom: True
+    stage_offset_hash_top: True
+    stage_offset_dotted_line: False
+    bank_height_hash_bottom: True
+    bank_height_hash_top: True
+    bank_height_dotted_line: False
+    
 
 
 output:
