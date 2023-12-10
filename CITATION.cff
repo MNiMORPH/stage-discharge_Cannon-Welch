@@ -9,7 +9,7 @@ references:
 authors:
 - family-names: "Jones"
   given-names: "Jabari"
-  orcid:" https://orcid.org/0000-0002-7399-6617"
+  orcid: "https://orcid.org/0000-0002-7399-6617"
 - family-names: "Wickert"
   given-names: "Andrew D."
   orcid: "https://orcid.org/0000-0002-9545-3365"
@@ -23,5 +23,5 @@ title: "Cannon River at Welch: stream-gauge data (stage, discharge, and sediment
 version: 2023.12.10
 doi: 
 date-released: 2023-12-10
-url: "https://github.com/MNiMORPH/stage-discharge-LaDormida_Captacion"
+url: "https://github.com/MNiMORPH/stage-discharge_Cannon-Welch"
 type: data
