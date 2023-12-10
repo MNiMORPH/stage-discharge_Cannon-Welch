@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10334497.svg)](https://doi.org/10.5281/zenodo.10334497)
+
 # stage-discharge_Cannon-Welch
 
  River stage and discharge for the Cannon River at Welch, Minnesota, along with double-Manning rating curve and nearby grain-size data.
