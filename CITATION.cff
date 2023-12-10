@@ -21,7 +21,7 @@ authors:
   given-names: "Emma"
 title: "Cannon River at Welch: stream-gauge data (stage, discharge, and sediment grain size) and double-Manning fit."
 version: 2023.12.10
-doi: 
+doi: 10.5281/zenodo.10334497
 date-released: 2023-12-10
 url: "https://github.com/MNiMORPH/stage-discharge_Cannon-Welch"
 type: data
